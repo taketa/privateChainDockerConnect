@@ -14,4 +14,4 @@ RUN \
 EXPOSE 8545
 EXPOSE 30303
 
-ENTRYPOINT ["/geth","--networkid","1234","--bootnodes","enode://0ca0ae1bcd46863fb26c01b71c4721ed2cadcb3f68405b94670d4add6a9d87bd00e931ebed1d8894a79afb3f52e42997368ad40f62802ad238031c3408ba24f7@172.17.0.2:30303","console"]
+ENTRYPOINT ["/geth","--networkid","1234","--bootnodes","enode://911659f75f73e642d9d95ec68185e61bd2dddabf1b8c035096bdf96e256ad46e80a4af1577d73dc1a67c7ecd5ca92c5637e5a26b68a8b8dbc1f774d00e1649db@172.17.0.2:30303","console"]
