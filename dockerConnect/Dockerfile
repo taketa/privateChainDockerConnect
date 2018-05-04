@@ -10,8 +10,8 @@ RUN \
 ADD . /media
 RUN \
   cd /media \
-  geth init genesis.json
+  /geth init genesis.json
 EXPOSE 8545
 EXPOSE 30303
 
-ENTRYPOINT ["/geth","--networkid","1234","--bootnodes","enode://911659f75f73e642d9d95ec68185e61bd2dddabf1b8c035096bdf96e256ad46e80a4af1577d73dc1a67c7ecd5ca92c5637e5a26b68a8b8dbc1f774d00e1649db@192.168.88.62:30303","console"]
+ENTRYPOINT ["/geth","--networkid","1234","--bootnodes","enode://08fe3d99d042b936d287facb54ffc1a729c4a2c33bad30f19c851519e15d283e5a293dd2ce6338817e50d9639792da328e730fa90a754e180a0eb7e4e28a4143@192.168.88.62:30303","console"]
