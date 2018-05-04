@@ -7,12 +7,9 @@ RUN \
   cp go-ethereum/build/bin/geth /geth && \
   apk del go git make gcc musl-dev linux-headers && \
   rm -rf /go-ethereum && rm -rf /var/cache/apk/*
-ADD . /media
 WORKDIR /media
-RUN \ 
-  cd /media \
-  /geth init genesis.json
+ADD . . 
+RUN /geth init genesis.json
 EXPOSE 8545
 EXPOSE 30303
-
-CMD ["/geth","--networkid","1234","rpc","console"]
+ENTRYPOINT ["/geth","--networkid","1234","rpc","console"]
